@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monedas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-titulo text-center mb-4">
+        <h1 class="titulo">Tipo de Cambio</h1>
+        <h2 class="titulo-2">En relación a 1 Euro</h2>
+    </div>
+
+    <!-- Buscador -->
+    <div class="mb-3">
+        <input type="text" id="buscadorMoneda" class="form-control" placeholder="Buscar moneda (ej. USD)">
+        <button onclick="filtrarMoneda()" class="btn btn-primary mt-2">Buscar</button>
+    </div>
+
+    <div class="row bg-light border-bottom">
+        <div class="col-md-6 text-center subtitulo">Moneda</div>
+        <div class="col-md-6 text-center subtitulo">Valor</div>
+    </div>
+
+    <!-- Tabla -->
+    <div id="resultado">
+    </div>
+
+    <footer class="footer mt-auto py-2 text-center">
+        <h5>Datos obtenidos de frankfurter.app - JAP 2023</h5>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
